@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Paw } from "lucide-react";
+import { Info } from "lucide-react";
 
 const dogBreeds = [
   {
@@ -37,7 +37,7 @@ const Index = () => {
             <CardContent>
               <CardDescription className="mb-4">{breed.description}</CardDescription>
               <Button onClick={() => setSelectedBreed(breed)}>
-                <Paw className="mr-2 h-4 w-4" /> Learn More
+                <Info className="mr-2 h-4 w-4" /> Learn More
               </Button>
             </CardContent>
           </Card>
